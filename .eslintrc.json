@@ -53,6 +53,9 @@
 		"no-tabs": [
 			"off"
 		],
+		"no-useless-constructor": [
+			"off"
+		],
 		"no-unreachable": [
 			"off"
 		],
