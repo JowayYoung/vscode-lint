@@ -50,7 +50,13 @@
 		"no-console": [
 			"off"
 		],
+		"no-extend-native": [
+			"off"
+		],
 		"no-new": [
+			"off"
+		],
+		"no-proto": [
 			"off"
 		],
 		"no-tabs": [
