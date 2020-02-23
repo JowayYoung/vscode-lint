@@ -59,6 +59,12 @@
 		"no-proto": [
 			"off"
 		],
+		"no-return-assign": [
+			"off"
+		],
+		"no-sequences": [
+			"off"
+		],
 		"no-tabs": [
 			"off"
 		],
