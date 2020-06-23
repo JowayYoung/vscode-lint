@@ -7,15 +7,20 @@
 		"node": true
 	},
 	"extends": [
-		"standard"
+		"standard",
+		"plugin:react/recommended"
 	],
 	"parser": "babel-eslint",
 	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
 		"ecmaVersion": 2020,
 		"sourceType": "module"
 	},
 	"plugins": [
-		"html"
+		"html",
+		"react"
 	],
 	"root": true,
 	"rules": {
@@ -30,6 +35,10 @@
 		"indent": [
 			"error",
 			"tab"
+		],
+		"jsx-quotes": [
+			"error",
+			"prefer-double"
 		],
 		"lines-between-class-members": [
 			"error",
@@ -93,5 +102,10 @@
 			"error",
 			"never"
 		]
+	},
+	"settings": {
+		"react": {
+			"version": "16"
+		}
 	}
 }
