@@ -8,7 +8,7 @@
 
 ##### 安装
 
-`npm i vscode-lint -g --registry=https://cain-dev.gameyw.netease.com/npm/`
+`npm i vscode-lint`
 
 ##### 配置
 
