@@ -8,7 +8,7 @@
 
 ##### 安装
 
-`npm i vscode-lint`
+`npm i -g vscode-lint`
 
 ##### 配置
 
