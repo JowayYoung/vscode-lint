@@ -8,7 +8,7 @@
 
 ##### 安装
 
-`npm i -g vscode-lint`
+`git clone https://github.com/JowayYoung/vscode-lint.git`
 
 ##### 配置
 
