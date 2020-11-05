@@ -25,7 +25,7 @@
 		],
 		"handle-callback-err": [
 			"error",
-			"error"
+			"err"
 		],
 		"indent": [
 			"error",
@@ -34,6 +34,9 @@
 		"lines-between-class-members": [
 			"error",
 			"never"
+		],
+		"multiline-ternary": [
+			"off"
 		],
 		"no-async-promise-executor": [
 			"off"
