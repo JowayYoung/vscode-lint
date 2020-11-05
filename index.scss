@@ -1,0 +1,11 @@
+@mixin white-bg {
+	background-color: #fff;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	opacity: .5;
+	@include white-bg;
+}
