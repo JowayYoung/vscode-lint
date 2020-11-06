@@ -29,7 +29,7 @@ module.exports = {
 			"error",
 			"err"
 		],
-		"indent": [
+		indent: [
 			"error",
 			"tab"
 		],
@@ -78,11 +78,11 @@ module.exports = {
 			"error",
 			"before"
 		],
-		"quotes": [
+		quotes: [
 			"error",
 			"double"
 		],
-		"semi": [
+		semi: [
 			"error",
 			"always"
 		],
@@ -96,7 +96,7 @@ module.exports = {
 		],
 		"vue/component-tags-order": [
 			"error",
-			{ "order": ["template", "style", "script"] }
+			{ order: ["template", "style", "script"] }
 		],
 		"vue/html-indent": [
 			"error",
@@ -120,4 +120,4 @@ module.exports = {
 			"off"
 		]
 	}
-}
+};

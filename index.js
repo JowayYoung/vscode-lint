@@ -1,2 +1,2 @@
-const obj = { a: 1, b: 2 };
-console.log(obj);
+const name = "JowayYoung";
+document.getElementById("app").innerText = "Hello, " + name;

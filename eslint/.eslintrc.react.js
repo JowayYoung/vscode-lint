@@ -30,7 +30,7 @@ module.exports = {
 			"error",
 			"err"
 		],
-		"indent": [
+		indent: [
 			"error",
 			"tab"
 		],
@@ -69,10 +69,10 @@ module.exports = {
 		"no-tabs": [
 			"off"
 		],
-		"no-useless-constructor": [
+		"no-unreachable": [
 			"off"
 		],
-		"no-unreachable": [
+		"no-useless-constructor": [
 			"off"
 		],
 		"object-curly-spacing": [
@@ -83,25 +83,25 @@ module.exports = {
 			"error",
 			"before"
 		],
-		"quotes": [
+		quotes: [
 			"error",
 			"double"
 		],
-		"semi": [
+		semi: [
 			"error",
 			"always"
 		],
 		"sort-keys": [
 			"error",
 			"asc",
-			{ "caseSensitive": false, "natural": true }
+			{ caseSensitive: false, natural: true }
 		],
 		"space-before-function-paren": [
 			"error",
 			"never"
 		]
 	},
-	"settings": {
-		"react": { "version": "16" }
+	settings: {
+		react: { version: "16" }
 	}
-}
+};
