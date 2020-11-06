@@ -1,26 +1,26 @@
-{
-	"env": {
-		"browser": true,
-		"commonjs": true,
-		"es6": true,
-		"jquery": true,
-		"node": true
+module.exports = {
+	env: {
+		browser: true,
+		commonjs: true,
+		es6: true,
+		jquery: true,
+		node: true
 	},
-	"extends": [
+	extends: [
 		"standard",
 		"plugin:vue/recommended"
 	],
-	"parser": "vue-eslint-parser",
-	"parserOptions": {
-		"ecmaVersion": 2020,
-		"parser": "babel-eslint",
-		"sourceType": "module"
+	parser: "vue-eslint-parser",
+	parserOptions: {
+		ecmaVersion: 2020,
+		parser: "babel-eslint",
+		sourceType: "module"
 	},
-	"plugins": [
+	plugins: [
 		"vue"
 	],
-	"root": true,
-	"rules": {
+	root: true,
+	rules: {
 		"eol-last": [
 			"error",
 			"never"
@@ -96,13 +96,7 @@
 		],
 		"vue/component-tags-order": [
 			"error",
-			{
-				"order": [
-					"template",
-					"style",
-					"script"
-				]
-			}
+			{ "order": ["template", "style", "script"] }
 		],
 		"vue/html-indent": [
 			"error",

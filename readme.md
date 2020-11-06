@@ -29,7 +29,7 @@
     },
     "eslint.nodePath": "path/vscode-lint/node_modules",
     "eslint.options": {
-        "configFile": "path/vscode-lint/.eslintrc.json",
+        "configFile": "path/vscode-lint/.eslintrc.js",
         "plugins": [
             "html"
         ]
@@ -88,6 +88,6 @@
 > 请自行根据项目选择以下配置文件
 
 - **eslint**：用于校验`js`、`react`、`vue`
-	- JS配置文件：`.eslintrc.json`
-	- React配置文件：`.eslintrc-react.json`
-	- Vue配置文件：`.eslintrc-vue.json`
+	- JS配置文件：`.eslintrc.js`
+	- React配置文件：`.eslintrc.react.js`
+	- Vue配置文件：`.eslintrc.vue.js`

@@ -1,24 +1,24 @@
-{
-	"env": {
-		"browser": true,
-		"commonjs": true,
-		"es6": true,
-		"jquery": true,
-		"node": true
+module.exports = {
+	env: {
+		browser: true,
+		commonjs: true,
+		es6: true,
+		jquery: true,
+		node: true
 	},
-	"extends": [
+	extends: [
 		"standard"
 	],
-	"parser": "babel-eslint",
-	"parserOptions": {
-		"ecmaVersion": 2020,
-		"sourceType": "module"
+	parser: "babel-eslint",
+	parserOptions: {
+		ecmaVersion: 2020,
+		sourceType: "module"
 	},
-	"plugins": [
+	plugins: [
 		"html"
 	],
-	"root": true,
-	"rules": {
+	root: true,
+	rules: {
 		"eol-last": [
 			"error",
 			"never"
@@ -87,10 +87,7 @@
 		"sort-keys": [
 			"error",
 			"asc",
-			{
-				"caseSensitive": false,
-				"natural": true
-			}
+			{ "caseSensitive": false, "natural": true }
 		],
 		"space-before-function-paren": [
 			"error",

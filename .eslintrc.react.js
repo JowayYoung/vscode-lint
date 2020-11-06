@@ -1,29 +1,27 @@
-{
-	"env": {
-		"browser": true,
-		"commonjs": true,
-		"es6": true,
-		"jquery": true,
-		"node": true
+module.exports = {
+	env: {
+		browser: true,
+		commonjs: true,
+		es6: true,
+		jquery: true,
+		node: true
 	},
-	"extends": [
+	extends: [
 		"standard",
 		"plugin:react/recommended"
 	],
-	"parser": "babel-eslint",
-	"parserOptions": {
-		"ecmaFeatures": {
-			"jsx": true
-		},
-		"ecmaVersion": 2020,
-		"sourceType": "module"
+	parser: "babel-eslint",
+	parserOptions: {
+		ecmaFeatures: { jsx: true },
+		ecmaVersion: 2020,
+		sourceType: "module"
 	},
-	"plugins": [
+	plugins: [
 		"html",
 		"react"
 	],
-	"root": true,
-	"rules": {
+	root: true,
+	rules: {
 		"eol-last": [
 			"error",
 			"never"
@@ -96,10 +94,7 @@
 		"sort-keys": [
 			"error",
 			"asc",
-			{
-				"caseSensitive": false,
-				"natural": true
-			}
+			{ "caseSensitive": false, "natural": true }
 		],
 		"space-before-function-paren": [
 			"error",
@@ -107,8 +102,6 @@
 		]
 	},
 	"settings": {
-		"react": {
-			"version": "16"
-		}
+		"react": { "version": "16" }
 	}
 }
