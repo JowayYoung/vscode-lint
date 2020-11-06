@@ -41,7 +41,7 @@
     },
     "eslint.nodePath": "path/vscode-lint/node_modules",
     "eslint.options": {
-        "configFile": "path/vscode-lint/eslint/.eslintrc.js",
+        "configFile": "path/vscode-lint/eslint/eslintrc.js",
         "plugins": [
             "html",
             "react",
@@ -100,13 +100,13 @@
 
 - **Stylelint**：用于校验`css/sass/scss/less`，无法使用文件导入的形式，故将配置书写在`settings.json`中
 - **Eslint**：用于校验`js/jsx/vue`
-	- JS配置文件：`eslint/.eslintrc.js`
-	- React配置文件：`eslint/.eslintrc.react.js`
-	- Vue配置文件：`eslint/.eslintrc.vue.js`
+	- JS配置文件：`eslint/eslintrc.js`
+	- React配置文件：`eslint/eslintrc.react.js`
+	- Vue配置文件：`eslint/eslintrc.vue.js`
 - **Tslint**：用于校验`ts/tsx/vue`(`Tslint`已被弃用，使用`Eslint`代替)
-	- JS配置文件：`tslint/.tslint.js`
-	- React配置文件：`tslint/.tslint.react.js`
-	- Vue配置文件：`tslint/.tslint.vue.js`
+	- JS配置文件：`tslint/tslint.js`
+	- React配置文件：`tslint/tslint.react.js`
+	- Vue配置文件：`tslint/tslint.vue.js`
 
 ### 版权
 
