@@ -64,10 +64,10 @@ module.exports = {
 		"no-tabs": [
 			"off"
 		],
-		"no-useless-constructor": [
+		"no-unreachable": [
 			"off"
 		],
-		"no-unreachable": [
+		"no-useless-constructor": [
 			"off"
 		],
 		"object-curly-spacing": [
