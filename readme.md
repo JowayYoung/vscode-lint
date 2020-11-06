@@ -41,12 +41,7 @@
     },
     "eslint.nodePath": "path/vscode-lint/node_modules",
     "eslint.options": {
-        "configFile": "path/vscode-lint/eslint/eslintrc.js",
-        "plugins": [
-            "html",
-            "react",
-            "vue"
-        ]
+        "configFile": "path/vscode-lint/eslint/eslintrc.js"
     },
     "less.validate": false,
     "scss.validate": false,
