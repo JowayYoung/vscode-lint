@@ -22,7 +22,10 @@
 	"scripts": {
 		"remove": "rimraf package-lock.json yarn.lock node_modules"
 	},
-	"dependencies": {
+	"dependencies": {},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "4.6.1",
+		"@typescript-eslint/parser": "4.6.1",
 		"babel-eslint": "10.1.0",
 		"eslint": "5.16.0",
 		"eslint-config-standard": "14.1.1",
@@ -35,9 +38,9 @@
 		"eslint-plugin-vue": "6.2.2",
 		"stylelint": "13.7.2",
 		"stylelint-config-standard": "20.0.0",
+		"typescript": "4.0.5",
 		"vue-eslint-parser": "7.1.1"
 	},
-	"devDependencies": {},
 	"engines": {
 		"node": ">= 10.0.0",
 		"npm": ">= 5.6.0"
