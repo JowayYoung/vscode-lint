@@ -68,6 +68,9 @@ module.exports = {
 		"no-useless-constructor": [
 			"off"
 		],
+		"no-var": [
+			"error"
+		],
 		"object-curly-spacing": [
 			"error",
 			"always"
