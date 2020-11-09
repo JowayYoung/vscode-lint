@@ -7,20 +7,41 @@ module.exports = {
 		node: true
 	},
 	extends: [
-		"standard",
-		"plugin:vue/recommended"
+		"standard-with-typescript",
+		"plugin:vue/recommended",
+		"plugin:@typescript-eslint/recommended"
 	],
 	parser: "vue-eslint-parser",
 	parserOptions: {
 		ecmaVersion: 2020,
-		parser: "babel-eslint",
+		extraFileExtensions: [".vue"],
+		parser: "@typescript-eslint/parser",
+		project: "./tsconfig.json",
 		sourceType: "module"
 	},
 	plugins: [
-		"vue"
+		"html",
+		"vue",
+		"@typescript-eslint"
 	],
 	root: true,
 	rules: {
+		"@typescript-eslint/indent": [
+			"error",
+			"tab"
+		],
+		"@typescript-eslint/quotes": [
+			"error",
+			"double"
+		],
+		"@typescript-eslint/semi": [
+			"error",
+			"always"
+		],
+		"@typescript-eslint/space-before-function-paren": [
+			"error",
+			"never"
+		],
 		"eol-last": [
 			"error",
 			"never"

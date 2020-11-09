@@ -8,17 +8,17 @@ module.exports = {
 	},
 	extends: [
 		"standard",
-		"plugin:react/recommended"
+		"plugin:vue/recommended"
 	],
-	parser: "babel-eslint",
+	parser: "vue-eslint-parser",
 	parserOptions: {
-		ecmaFeatures: { jsx: true },
 		ecmaVersion: 2020,
+		parser: "babel-eslint",
 		sourceType: "module"
 	},
 	plugins: [
 		"html",
-		"react"
+		"vue"
 	],
 	root: true,
 	rules: {
@@ -33,10 +33,6 @@ module.exports = {
 		indent: [
 			"error",
 			"tab"
-		],
-		"jsx-quotes": [
-			"error",
-			"prefer-double"
 		],
 		"lines-between-class-members": [
 			"error",
@@ -94,14 +90,38 @@ module.exports = {
 			"error",
 			"always"
 		],
-		"sort-keys": [
-			"error",
-			"asc",
-			{ caseSensitive: false, natural: true }
-		],
 		"space-before-function-paren": [
 			"error",
 			"never"
+		],
+		"vue/component-definition-name-casing": [
+			"error",
+			"kebab-case"
+		],
+		"vue/component-tags-order": [
+			"error",
+			{ order: ["template", "style", "script"] }
+		],
+		"vue/html-indent": [
+			"error",
+			"tab"
+		],
+		"vue/html-self-closing": [
+			"off"
+		],
+		"vue/max-attributes-per-line": [
+			"off"
+		],
+		"vue/mustache-interpolation-spacing": [
+			"error",
+			"never"
+		],
+		"vue/name-property-casing": [
+			"error",
+			"kebab-case"
+		],
+		"vue/singleline-html-element-content-newline": [
+			"off"
 		]
 	}
 };

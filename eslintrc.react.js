@@ -7,17 +7,18 @@ module.exports = {
 		node: true
 	},
 	extends: [
-		"standard-with-typescript",
-		"plugin:@typescript-eslint/recommended"
+		"standard",
+		"plugin:react/recommended"
 	],
-	parser: "@typescript-eslint/parser",
+	parser: "babel-eslint",
 	parserOptions: {
+		ecmaFeatures: { jsx: true },
 		ecmaVersion: 2020,
-		// project: "tsconfig.json",
 		sourceType: "module"
 	},
 	plugins: [
-		"@typescript-eslint"
+		"html",
+		"react"
 	],
 	root: true,
 	rules: {
@@ -32,6 +33,10 @@ module.exports = {
 		indent: [
 			"error",
 			"tab"
+		],
+		"jsx-quotes": [
+			"error",
+			"prefer-double"
 		],
 		"lines-between-class-members": [
 			"error",
@@ -70,6 +75,9 @@ module.exports = {
 		"no-useless-constructor": [
 			"off"
 		],
+		"no-var": [
+			"error"
+		],
 		"object-curly-spacing": [
 			"error",
 			"always"
@@ -95,5 +103,8 @@ module.exports = {
 			"error",
 			"never"
 		]
+	},
+	settings: {
+		react: { version: "detect" }
 	}
 };
