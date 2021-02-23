@@ -30,8 +30,8 @@
 		"vue": "2.6.12"
 	},
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "4.15.1",
-		"@typescript-eslint/parser": "4.15.1",
+		"@typescript-eslint/eslint-plugin": "4.15.2",
+		"@typescript-eslint/parser": "4.15.2",
 		"babel-eslint": "10.1.0",
 		"eslint": "7.20.0",
 		"eslint-config-standard": "16.0.2",
