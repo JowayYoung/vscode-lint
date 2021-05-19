@@ -16,7 +16,7 @@
 	"homepage": "https://github.com/JowayYoung",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/JowayYoung/bruce-cli.git"
+		"url": "https://github.com/JowayYoung/vscode-lint.git"
 	},
 	"license": "MIT",
 	"scripts": {
