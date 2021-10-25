@@ -9,6 +9,7 @@ module.exports = {
 			true,
 			{ ignoreAtRules: ["content", "each", "error", "extend", "for", "function", "if", "include", "mixin", "return", "while"] }
 		],
+		"color-function-notation": "legacy",
 		"color-hex-case": "lower",
 		"comment-empty-line-before": "never",
 		"declaration-colon-newline-after": null,
