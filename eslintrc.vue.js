@@ -12,7 +12,7 @@ module.exports = {
 	],
 	parser: "vue-eslint-parser",
 	parserOptions: {
-		ecmaVersion: 2020,
+		ecmaVersion: 2021,
 		parser: "babel-eslint",
 		sourceType: "module"
 	},
