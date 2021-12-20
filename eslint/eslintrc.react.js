@@ -9,9 +9,7 @@ module.exports = {
 		node: true
 	},
 	extends: [
-		"eslint:recommended",
-		"plugin:import/recommended",
-		"plugin:promise/recommended",
+		"standard",
 		"plugin:react/recommended",
 		"plugin:react-hooks/recommended"
 	],
@@ -28,8 +26,6 @@ module.exports = {
 	},
 	plugins: [
 		"html",
-		"import",
-		"promise",
 		"react",
 		"react-hooks"
 	],
@@ -38,7 +34,6 @@ module.exports = {
 		/* eslint-disable quote-props */
 		"eol-last": ["error", "never"],
 		"handle-callback-err": ["error", "err"],
-		"import/no-unresolved": ["off"], // import
 		"indent": ["error", "tab"],
 		"jsx-quotes": ["error", "prefer-double"], // react
 		"lines-between-class-members": ["error", "never"],
@@ -59,7 +54,8 @@ module.exports = {
 		"quotes": ["error", "double"],
 		"semi": ["error", "always"],
 		"sort-keys": ["error", "asc", { caseSensitive: false, natural: true }],
-		"space-before-function-paren": ["error", "never"]
+		"space-before-function-paren": ["error", "never"],
+		"switch-colon-spacing": ["error"]
 		/* eslint-enable quote-props */
 	}
 };

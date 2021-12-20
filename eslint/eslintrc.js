@@ -9,9 +9,7 @@ module.exports = {
 		node: true
 	},
 	extends: [
-		"eslint:recommended",
-		"plugin:import/recommended",
-		"plugin:promise/recommended"
+		"standard"
 	],
 	parser: "@babel/eslint-parser",
 	parserOptions: {
@@ -23,16 +21,13 @@ module.exports = {
 		sourceType: "module"
 	},
 	plugins: [
-		"html",
-		"import",
-		"promise"
+		"html"
 	],
 	root: true,
 	rules: {
 		/* eslint-disable quote-props */
 		"eol-last": ["error", "never"],
 		"handle-callback-err": ["error", "err"],
-		"import/no-unresolved": ["off"], // import
 		"indent": ["error", "tab"],
 		"lines-between-class-members": ["error", "never"],
 		"multiline-ternary": ["off"],
@@ -52,7 +47,8 @@ module.exports = {
 		"quotes": ["error", "double"],
 		"semi": ["error", "always"],
 		"sort-keys": ["error", "asc", { caseSensitive: false, natural: true }],
-		"space-before-function-paren": ["error", "never"]
+		"space-before-function-paren": ["error", "never"],
+		"switch-colon-spacing": ["error"]
 		/* eslint-enable quote-props */
 	}
 };

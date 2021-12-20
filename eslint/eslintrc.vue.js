@@ -9,9 +9,7 @@ module.exports = {
 		node: true
 	},
 	extends: [
-		"eslint:recommended",
-		"plugin:import/recommended",
-		"plugin:promise/recommended",
+		"standard",
 		"plugin:vue/recommended"
 	],
 	parser: "vue-eslint-parser",
@@ -35,7 +33,6 @@ module.exports = {
 		/* eslint-disable quote-props */
 		"eol-last": ["error", "never"],
 		"handle-callback-err": ["error", "err"],
-		"import/no-unresolved": ["off"], // import
 		"indent": ["error", "tab"],
 		"lines-between-class-members": ["error", "never"],
 		"multiline-ternary": ["off"],
@@ -55,6 +52,7 @@ module.exports = {
 		"quotes": ["error", "double"],
 		"semi": ["error", "always"],
 		"space-before-function-paren": ["error", "never"],
+		"switch-colon-spacing": ["error"],
 		"vue/component-definition-name-casing": ["error", "kebab-case"], // vue
 		"vue/component-tags-order": ["error", { order: ["template", "style", "script"] }], // vue
 		"vue/html-indent": ["error", "tab"], // vue
