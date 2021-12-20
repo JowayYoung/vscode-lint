@@ -8,8 +8,6 @@ module.exports = {
 		"at-rule-empty-line-before": "never",
 		"at-rule-no-unknown": [true, { ignoreAtRules: ["content", "each", "error", "extend", "for", "function", "if", "include", "mixin", "return", "while"] }],
 		"color-function-notation": "legacy",
-		"color-hex-case": "lower", // 🚩
-		"color-hex-length": "short", // 🚩
 		"color-no-invalid-hex": true,
 		"comment-empty-line-before": "never",
 		"declaration-colon-newline-after": null,
