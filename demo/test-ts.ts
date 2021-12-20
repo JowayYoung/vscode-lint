@@ -1,4 +1,4 @@
-const a = "12";
+const a: string = "12";
 
 class ContainsText {
 	delayedText = "hello";

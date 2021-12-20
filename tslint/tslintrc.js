@@ -12,104 +12,47 @@ module.exports = {
 	],
 	parser: "@typescript-eslint/parser",
 	parserOptions: {
-		ecmaVersion: 2021,
+		createDefaultProgram: true,
+		ecmaVersion: "latest",
 		project: "./tsconfig.json",
-		sourceType: "module"
-	},
+		sourceType: "module",
+		tsconfigRootDir: __dirname
+	}, // https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/parser#parseroptionsproject
 	plugins: [
 		"html",
 		"@typescript-eslint"
 	],
 	root: true,
 	rules: {
-		"@typescript-eslint/indent": [
-			"error",
-			"tab"
-		],
-		"@typescript-eslint/quotes": [
-			"error",
-			"double"
-		],
-		"@typescript-eslint/semi": [
-			"error",
-			"always"
-		],
-		"@typescript-eslint/space-before-function-paren": [
-			"error",
-			"never"
-		],
-		"eol-last": [
-			"error",
-			"never"
-		],
-		"handle-callback-err": [
-			"error",
-			"err"
-		],
-		indent: [
-			"off"
-		],
-		"lines-between-class-members": [
-			"error",
-			"never"
-		],
-		"multiline-ternary": [
-			"off"
-		],
-		"no-async-promise-executor": [
-			"off"
-		],
-		"no-console": [
-			"off"
-		],
-		"no-extend-native": [
-			"off"
-		],
-		"no-new": [
-			"off"
-		],
-		"no-proto": [
-			"off"
-		],
-		"no-return-assign": [
-			"off"
-		],
-		"no-sequences": [
-			"off"
-		],
-		"no-tabs": [
-			"off"
-		],
-		"no-unreachable": [
-			"off"
-		],
-		"no-useless-constructor": [
-			"off"
-		],
-		"no-var": [
-			"error"
-		],
-		"object-curly-spacing": [
-			"error",
-			"always"
-		],
-		"operator-linebreak": [
-			"error",
-			"before"
-		],
-		quotes: [
-			"off"
-		],
-		semi: [
-			"off"
-		],
-		"sort-keys": [
-			"error",
-			"asc",
-			{ caseSensitive: false, natural: true }
-		],
-		"space-before-function-paren": [
-			"off"
-		]
+		/* eslint-disable quote-props */
+		"@typescript-eslint/indent": ["error", "tab"], // ts
+		"@typescript-eslint/no-inferrable-types": ["off"], // ts
+		"@typescript-eslint/quotes": ["error", "double"], // ts
+		"@typescript-eslint/semi": ["error", "always"], // ts
+		"@typescript-eslint/space-before-function-paren": ["error", "never"], // ts
+		"eol-last": ["error", "never"],
+		"handle-callback-err": ["error", "err"],
+		"indent": ["error", "tab"],
+		"lines-between-class-members": ["error", "never"],
+		"multiline-ternary": ["off"],
+		"no-async-promise-executor": ["off"],
+		"no-console": ["off"],
+		"no-extend-native": ["off"],
+		"no-new": ["off"],
+		"no-proto": ["off"],
+		"no-return-assign": ["off"],
+		"no-sequences": ["off"],
+		"no-tabs": ["off"],
+		"no-unreachable": ["off"],
+		"no-useless-constructor": ["off"],
+		"no-var": ["error"],
+		"object-curly-spacing": ["error", "always"],
+		"operator-linebreak": ["error", "before"],
+		"quotes": ["error", "double"],
+		"semi": ["error", "always"],
+		"sort-keys": ["error", "asc", { caseSensitive: false, natural: true }],
+		"space-before-function-paren": ["error", "never"],
+		"switch-colon-spacing": ["error"]
+		/* eslint-enable quote-props */
 	}
 };

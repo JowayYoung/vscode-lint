@@ -61,5 +61,6 @@ module.exports = {
 		"vue/mustache-interpolation-spacing": ["error", "never"], // vue
 		"vue/name-property-casing": ["error", "kebab-case"], // vue
 		"vue/singleline-html-element-content-newline": ["off"] // vue
+		/* eslint-enable quote-props */
 	}
 };
