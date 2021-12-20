@@ -1,7 +1,8 @@
+// 校验HTML和Vue的CSS时开启配置的stylelint.configBasedir和stylelint.customSyntax
+// https://github.com/stylelint/stylelint/blob/14.0.0/docs/migration-guide/to-14.md#syntax-option-and-automatic-inferral-of-syntax
 module.exports = {
 	extends: "stylelint-config-standard",
 	plugins: ["stylelint-order"],
-	// processors: "@mapbox/stylelint-processor-arbitrary-tags",
 	rules: {
 		/* eslint-disable quote-props */
 		"alpha-value-notation": "number",
