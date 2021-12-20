@@ -1,3 +1,5 @@
+const { join } = require("path");
+
 module.exports = {
 	env: {
 		browser: true,
@@ -7,104 +9,57 @@ module.exports = {
 		node: true
 	},
 	extends: [
-		"standard",
-		"plugin:react/recommended"
+		"eslint:recommended",
+		"plugin:import/recommended",
+		"plugin:promise/recommended",
+		"plugin:react/recommended",
+		"plugin:react-hooks/recommended"
 	],
-	parser: "babel-eslint",
+	parser: "@babel/eslint-parser",
 	parserOptions: {
+		babelOptions: {
+			cwd: join(__dirname, ".."),
+			presets: ["@babel/preset-react"]
+		},
 		ecmaFeatures: { jsx: true },
-		ecmaVersion: 2021,
+		ecmaVersion: "latest",
+		requireConfigFile: false,
 		sourceType: "module"
 	},
 	plugins: [
 		"html",
-		"react"
+		"import",
+		"promise",
+		"react",
+		"react-hooks"
 	],
 	root: true,
 	rules: {
-		"eol-last": [
-			"error",
-			"never"
-		],
-		"handle-callback-err": [
-			"error",
-			"err"
-		],
-		indent: [
-			"error",
-			"tab"
-		],
-		"jsx-quotes": [
-			"error",
-			"prefer-double"
-		],
-		"lines-between-class-members": [
-			"error",
-			"never"
-		],
-		"multiline-ternary": [
-			"off"
-		],
-		"no-async-promise-executor": [
-			"off"
-		],
-		"no-console": [
-			"off"
-		],
-		"no-extend-native": [
-			"off"
-		],
-		"no-new": [
-			"off"
-		],
-		"no-proto": [
-			"off"
-		],
-		"no-return-assign": [
-			"off"
-		],
-		"no-sequences": [
-			"off"
-		],
-		"no-tabs": [
-			"off"
-		],
-		"no-unreachable": [
-			"off"
-		],
-		"no-useless-constructor": [
-			"off"
-		],
-		"no-var": [
-			"error"
-		],
-		"object-curly-spacing": [
-			"error",
-			"always"
-		],
-		"operator-linebreak": [
-			"error",
-			"before"
-		],
-		quotes: [
-			"error",
-			"double"
-		],
-		semi: [
-			"error",
-			"always"
-		],
-		"sort-keys": [
-			"error",
-			"asc",
-			{ caseSensitive: false, natural: true }
-		],
-		"space-before-function-paren": [
-			"error",
-			"never"
-		]
-	},
-	settings: {
-		react: { version: "detect" }
+		/* eslint-disable quote-props */
+		"eol-last": ["error", "never"],
+		"handle-callback-err": ["error", "err"],
+		"import/no-unresolved": ["off"], // import
+		"indent": ["error", "tab"],
+		"jsx-quotes": ["error", "prefer-double"], // react
+		"lines-between-class-members": ["error", "never"],
+		"multiline-ternary": ["off"],
+		"no-async-promise-executor": ["off"],
+		"no-console": ["off"],
+		"no-extend-native": ["off"],
+		"no-new": ["off"],
+		"no-proto": ["off"],
+		"no-return-assign": ["off"],
+		"no-sequences": ["off"],
+		"no-tabs": ["off"],
+		"no-unreachable": ["off"],
+		"no-useless-constructor": ["off"],
+		"no-var": ["error"],
+		"object-curly-spacing": ["error", "always"],
+		"operator-linebreak": ["error", "before"],
+		"quotes": ["error", "double"],
+		"semi": ["error", "always"],
+		"sort-keys": ["error", "asc", { caseSensitive: false, natural: true }],
+		"space-before-function-paren": ["error", "never"]
+		/* eslint-enable quote-props */
 	}
 };
