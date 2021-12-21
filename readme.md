@@ -82,7 +82,7 @@
 
 ### 结构
 
-> 请自行根据项目选择以下配置文件
+请自行根据项目选择以下配置文件。
 
 - **stylelint文件夹**：校验`css/sass/scss/less文件`
 	- 配置文件：`stylelintrc.js`
@@ -94,6 +94,8 @@
 	- TS配置文件：`tslintrc.js`
 	- React配置文件：`tslintrc.react.js`
 	- Vue配置文件：`tslintrc.vue.js`
+
+若校验`React应用`代码，则将`eslint.options.overrideConfigFile`的值修改为`path/vscode-lint/eslint/eslintrc.react.js`。若校验`React TS应用`代码，则将`eslint.options.overrideConfigFile`的值修改为`path/vscode-lint/tslint/tslintrc.react.js`。其他情况以此类推。
 
 ### 疑问
 
