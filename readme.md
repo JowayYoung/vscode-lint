@@ -64,7 +64,7 @@
 	"stylelint.configFile": "path/vscode-lint/stylelint/stylelintrc.js",
 	// "stylelint.customSyntax": "postcss-html", // 校验HTML和Vue的CSS时开启
 	"stylelint.stylelintPath": "path/vscode-lint/node_modules/stylelint",
-	"stylelint.validate": ["css", "html", "less", "sass", "scss", "vue"]
+	"stylelint.validate": ["css", "html", "sass", "scss", "less", "vue"]
 }
 ```
 
