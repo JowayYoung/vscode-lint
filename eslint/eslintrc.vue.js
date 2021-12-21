@@ -24,8 +24,7 @@ module.exports = {
 		sourceType: "module"
 	},
 	plugins: [
-		"import",
-		"promise",
+		"html",
 		"vue"
 	],
 	root: true,
