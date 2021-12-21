@@ -3,8 +3,9 @@
 </template>
 
 <style lang="scss">
+$bg: #fff;
 @mixin white-bg {
-	background-color: #fff;
+	background-color: $bg;
 }
 * {
 	margin: 0;

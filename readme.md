@@ -9,12 +9,13 @@
 [![coverage](https://img.shields.io/badge/coverage-100%25-09f.svg)](https://github.com/JowayYoung/vscode-lint)
 [![license](https://img.shields.io/badge/license-MIT-09f.svg)](https://github.com/JowayYoung/vscode-lint)
 
-> `vscode-lint`是一个集成**Stylelint**和**Eslint**的VSCode配置工具，提供**css/sass/scss/less**、**js/ts**、**react**和**vue**的代码校验功能
+> `vscode-lint`是一个集成**Stylelint**和**Eslint**的VSCode配置工具，提供`html`、`css/scss/less`、`js/ts`、`react`和`vue`的代码校验功能
 
 **vscode-lint**用于约束团队成员的`编码规范`和`编码风格`，从而增加项目代码的`可维护性`和`可接入性`，保障项目整体质量，可减少`无用代码`、`重复代码`、`错误代码`和`漏洞代码`的产生几率。它的根本目的是**一次配置全局运行**，统一所有项目的`编码规范`和`编码风格`，养成规范的码字习惯，减少不必要的错误和隐患。
 
 `vscode-lint`依赖以下`NPM模块`的最新版本。
 
+[![postcss](https://img.shields.io/badge/postcss-8.x.x-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
 [![babel](https://img.shields.io/badge/babel-7.x.x-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
 [![typescript](https://img.shields.io/badge/typescript-4.x.x-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
 [![stylelint](https://img.shields.io/badge/stylelint-14.x.x-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
@@ -62,9 +63,8 @@
 	},
 	"stylelint.configBasedir": "path/vscode-lint",
 	"stylelint.configFile": "path/vscode-lint/stylelint/stylelintrc.js",
-	// "stylelint.customSyntax": "postcss-html", // 校验HTML和Vue的CSS时开启
 	"stylelint.stylelintPath": "path/vscode-lint/node_modules/stylelint",
-	"stylelint.validate": ["css", "html", "sass", "scss", "less", "vue"]
+	"stylelint.validate": ["html", "css", "scss", "less", "vue"]
 }
 ```
 
@@ -73,24 +73,19 @@
 - 执行`npm config get prefix`获取的**NPM根目录**，例如是`E:/Node/prefix/node_modules`
 - 将上述配置的`path`替换为`E:/Node/prefix/node_modules`
 
-使用`Stylelint`校验全局CSS时，需注意以下两点且只能任选其一。
-
-- 若单独校验`css/sass/scss/less文件`需注释`stylelint.customSyntax`
-- 若单独校验`html/vue文件`需开启`stylelint.customSyntax`
-
-请保持`VSCode`和所有插件的版本为最新版本，以防某些问题导致`Stylelint`和`Eslint`的进程因版本问题被阻断。
+**请保持VSCode及其所有插件均为最新版本**，防止因版本问题导致`Stylelint`和`Eslint`失效。
 
 ### 结构
 
-请自行根据项目选择以下配置文件。
+请根据项目自行选择以下配置文件。
 
-- **stylelint文件夹**：校验`css/sass/scss/less文件`
+- **stylelint文件夹**：校验`html/css/scss/less/vue文件`
 	- 配置文件：`stylelintrc.js`
-- **eslint文件夹**：校验`js/jsx/vue文件`
+- **eslint文件夹**：校验`html/js/jsx/vue文件`
 	- JS配置文件：`eslintrc.js`
 	- React配置文件：`eslintrc.react.js`
 	- Vue配置文件：`eslintrc.vue.js`
-- **tslint文件夹**：校验`ts/tsx/vue文件`(`Tslint`已弃用，使用`Eslint`代替)
+- **tslint文件夹**：校验`html/ts/tsx/vue文件`(`Tslint`已弃用，使用`Eslint`代替)
 	- TS配置文件：`tslintrc.js`
 	- React配置文件：`tslintrc.react.js`
 	- Vue配置文件：`tslintrc.vue.js`

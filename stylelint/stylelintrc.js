@@ -1,7 +1,20 @@
 // 校验HTML和Vue的CSS时开启配置的stylelint.configBasedir和stylelint.customSyntax
+// https://stylelint.io/migration-guide/to-14/
 // https://github.com/stylelint/stylelint/blob/14.0.0/docs/migration-guide/to-14.md#syntax-option-and-automatic-inferral-of-syntax
+// https://gitmemory.cn/index.php/repo/stylelint/stylelint/issues/5746
+
 module.exports = {
 	extends: "stylelint-config-standard",
+	overrides: [{
+		customSyntax: "postcss-scss",
+		files: ["**/*.(css|scss)"]
+	}, {
+		customSyntax: "postcss-less",
+		files: ["**/*.less"]
+	}, {
+		customSyntax: "postcss-html",
+		files: ["**/*.(html|vue)"]
+	}],
 	plugins: ["stylelint-order"],
 	rules: {
 		/* eslint-disable quote-props */
