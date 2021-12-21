@@ -123,7 +123,7 @@ Eslint is disabled since its execution has not been approved or denied yet. Use 
 
 ### 版权
 
-MIT © [Joway Young](https://github.com/JowayYoung)
+MIT © [JowayYoung](https://github.com/JowayYoung)
 
 ### 后记
 
