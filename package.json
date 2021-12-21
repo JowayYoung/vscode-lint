@@ -1,6 +1,6 @@
 {
 	"name": "vscode-lint",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"description": "一个用于规范团队代码风格和校验团队代码语法的VSCode插件配置",
 	"keywords": [
 		"vscode",
@@ -38,8 +38,8 @@
 		"@babel/core": "7.16.5",
 		"@babel/eslint-parser": "7.16.5",
 		"@babel/preset-react": "7.16.5",
-		"@typescript-eslint/eslint-plugin": "5.7.0",
-		"@typescript-eslint/parser": "5.7.0",
+		"@typescript-eslint/eslint-plugin": "5.8.0",
+		"@typescript-eslint/parser": "5.8.0",
 		"eslint": "8.5.0",
 		"eslint-config-standard": "16.0.3",
 		"eslint-config-standard-with-typescript": "21.0.1",

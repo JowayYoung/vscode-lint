@@ -1,17 +1,25 @@
 # VSCode Lint <img src="https://img.shields.io/badge/vscode--lint-集成Stylelint和Eslint的VSCode配置工具-66f.svg">
 
-[![author](https://img.shields.io/badge/author-JowayYoung-f66.svg)](https://github.com/JowayYoung/img-master)
-[![version](https://img.shields.io/badge/version-0.0.1-f66.svg)](https://github.com/JowayYoung/img-master)
-[![node](https://img.shields.io/badge/node-%3E%3D%2012.0.0-3c9.svg)](https://github.com/JowayYoung/img-master)
-[![npm](https://img.shields.io/badge/npm-%3E%3D%206.9.0-3c9.svg)](https://github.com/JowayYoung/img-master)
-[![test](https://img.shields.io/badge/test-passing-f90.svg)](https://github.com/JowayYoung/img-master)
-[![build](https://img.shields.io/badge/build-passing-f90.svg)](https://github.com/JowayYoung/img-master)
-[![coverage](https://img.shields.io/badge/coverage-100%25-09f.svg)](https://github.com/JowayYoung/img-master)
-[![license](https://img.shields.io/badge/license-MIT-09f.svg)](https://github.com/JowayYoung/img-master)
+[![author](https://img.shields.io/badge/author-JowayYoung-f66.svg)](https://github.com/JowayYoung/vscode-lint)
+[![version](https://img.shields.io/badge/version-0.0.1-f66.svg)](https://github.com/JowayYoung/vscode-lint)
+[![node](https://img.shields.io/badge/node-%3E%3D12.0.0-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
+[![npm](https://img.shields.io/badge/npm-%3E%3D6.9.0-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
+[![test](https://img.shields.io/badge/test-passing-f90.svg)](https://github.com/JowayYoung/vscode-lint)
+[![build](https://img.shields.io/badge/build-passing-f90.svg)](https://github.com/JowayYoung/vscode-lint)
+[![coverage](https://img.shields.io/badge/coverage-100%25-09f.svg)](https://github.com/JowayYoung/vscode-lint)
+[![license](https://img.shields.io/badge/license-MIT-09f.svg)](https://github.com/JowayYoung/vscode-lint)
 
 > `vscode-lint`是一个集成**Stylelint**和**Eslint**的VSCode配置工具，提供**css/sass/scss/less**、**js/ts**、**react**和**vue**的代码校验功能
 
-**vscode-lint**用于约束团队成员的`编码规范`和`编码风格`，从而增加项目代码的`可维护性`和`可接入性`，保障项目整体质量，可减少`无用代码`、`重复代码`、`错误代码`和`漏洞代码`的产生几率。它的根本目的是**一次配置全局运行**，统一所有项目的`编码规范`和`编码风格`，养成规范的码字习惯，减少不必要的错误和隐患。å
+**vscode-lint**用于约束团队成员的`编码规范`和`编码风格`，从而增加项目代码的`可维护性`和`可接入性`，保障项目整体质量，可减少`无用代码`、`重复代码`、`错误代码`和`漏洞代码`的产生几率。它的根本目的是**一次配置全局运行**，统一所有项目的`编码规范`和`编码风格`，养成规范的码字习惯，减少不必要的错误和隐患。
+
+`vscode-lint`依赖以下`NPM模块`的最新版本。
+
+[![babel](https://img.shields.io/badge/babel-7.x.x-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
+[![typescript](https://img.shields.io/badge/typescript-4.x.x-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
+[![stylelint](https://img.shields.io/badge/stylelint-14.x.x-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
+[![eslint](https://img.shields.io/badge/eslint-8.x.x-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
+[![eslint](https://img.shields.io/badge/typescript--eslint-5.x.x-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
 
 为了方便表述，统一以下名词。
 
@@ -34,7 +42,7 @@
 - 选择`文件→首选项→设置`，`设置`中可选`用户`或`工作区`
 	- **用户**：配置生效后会作用于全局项目(`若大部分项目都是单一的React应用或Vue应用推荐使用全局配置`)
 	- **工作区**：配置生效后只会作用于当前打开项目
-- 点击`设置`右上角中间图标`打开设置(json)`，打开的对应文件是`settings.json`(上述有提及)
+- 点击`设置`右上角中间图标`打开设置(json)`，打开的对应文件是`settings.json`
 - 插入以下配置并重启`VSCode`：为了保障每次修改完毕都能正常格式化代码，必须重启`VSCode`
 
 ```json
@@ -62,13 +70,30 @@
 
 以上配置的`path`为`vscode-lint`模块所在的**NPM根目录**，可执行`npm config get prefix`获取**NPM根目录**并替换`path`。
 
-- 执行`npm config get prefix`获取的**NPM根目录**若为`E:/Node/prefix/node_modules`
+- 执行`npm config get prefix`获取的**NPM根目录**，例如是`E:/Node/prefix/node_modules`
 - 将上述配置的`path`替换为`E:/Node/prefix/node_modules`
 
 使用`Stylelint`校验全局CSS时，需注意以下两点且只能任选其一。
 
-- 若单独校验`css/sass/scss/less文件`，需注释`stylelint.customSyntax`
-- 若单独校验`html/vue文件`，需开启`stylelint.customSyntax`
+- 若单独校验`css/sass/scss/less文件`需注释`stylelint.customSyntax`
+- 若单独校验`html/vue文件`需开启`stylelint.customSyntax`
+
+请保持`VSCode`和所有插件的版本为最新版本，以防某些问题导致`Stylelint`和`Eslint`的进程因版本问题被阻断。
+
+### 结构
+
+> 请自行根据项目选择以下配置文件
+
+- **stylelint文件夹**：校验`css/sass/scss/less文件`
+	- 配置文件：`stylelintrc.js`
+- **eslint文件夹**：校验`js/jsx/vue文件`
+	- JS配置文件：`eslintrc.js`
+	- React配置文件：`eslintrc.react.js`
+	- Vue配置文件：`eslintrc.vue.js`
+- **tslint文件夹**：校验`ts/tsx/vue文件`(`Tslint`已弃用，使用`Eslint`代替)
+	- TS配置文件：`tslintrc.js`
+	- React配置文件：`tslintrc.react.js`
+	- Vue配置文件：`tslintrc.vue.js`
 
 ### 疑问
 
@@ -93,20 +118,6 @@ Eslint is disabled since its execution has not been approved or denied yet. Use 
 ```
 
 说明`Eslint`被禁用了，虽然配置中无明确的禁用字段，但还是被禁用了。此时移步到`VSCode`右下角的工具栏，会看到`禁用图标+ESLINT`的标红按钮，单击它就会弹出一个弹框，选择`Allow Everywhere`就能启用`Eslint`的校验功能了。
-
-### 组成
-
-> 请自行根据项目选择以下配置文件
-
-- **stylelint文件夹**：用于校验`css/sass/scss/less`
-- **Eslint**：用于校验`js/jsx/vue`
-	- JS配置文件：`eslintrc.js`
-	- React配置文件：`eslintrc.react.js`
-	- Vue配置文件：`eslintrc.vue.js`
-- **Tslint**：用于校验`ts/tsx/vue`(`Tslint`已弃用，使用`Eslint`代替)
-	- JS配置文件：`tslintrc.js`
-	- React配置文件：`tslintrc.react.js`
-	- Vue配置文件：`tslintrc.vue.js`
 
 ### 版权
 
