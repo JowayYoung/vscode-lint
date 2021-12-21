@@ -1,7 +1,7 @@
 # VSCode Lint <img src="https://img.shields.io/badge/vscode--lint-集成Stylelint和Eslint的VSCode配置工具-66f.svg">
 
 [![author](https://img.shields.io/badge/author-JowayYoung-f66.svg)](https://github.com/JowayYoung/vscode-lint)
-[![version](https://img.shields.io/badge/version-0.0.1-f66.svg)](https://github.com/JowayYoung/vscode-lint)
+[![version](https://img.shields.io/badge/version-0.0.2-f66.svg)](https://github.com/JowayYoung/vscode-lint)
 [![node](https://img.shields.io/badge/node-%3E%3D12.0.0-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
 [![npm](https://img.shields.io/badge/npm-%3E%3D6.9.0-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
 [![test](https://img.shields.io/badge/test-passing-f90.svg)](https://github.com/JowayYoung/vscode-lint)
@@ -9,7 +9,7 @@
 [![coverage](https://img.shields.io/badge/coverage-100%25-09f.svg)](https://github.com/JowayYoung/vscode-lint)
 [![license](https://img.shields.io/badge/license-MIT-09f.svg)](https://github.com/JowayYoung/vscode-lint)
 
-> `vscode-lint`是一个集成**Stylelint**和**Eslint**的VSCode配置工具，提供`html`、`css/scss/less`、`js/ts`、`react`和`vue`的代码校验功能
+> `vscode-lint`是一个集成**Stylelint**和**Eslint**的VSCode配置工具，提供`html/css/scss/less/js/ts/jsx/tsx/vue文件`的代码校验功能
 
 **vscode-lint**用于约束团队成员的`编码规范`和`编码风格`，从而增加项目代码的`可维护性`和`可接入性`，保障项目整体质量，可减少`无用代码`、`重复代码`、`错误代码`和`漏洞代码`的产生几率。它的根本目的是**一次配置全局运行**，统一所有项目的`编码规范`和`编码风格`，养成规范的码字习惯，减少不必要的错误和隐患。
 
