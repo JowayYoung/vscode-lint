@@ -1,7 +1,7 @@
 # VSCode Lint <img src="https://img.shields.io/badge/vscode--lint-集成Stylelint和Eslint的VSCode配置工具-66f.svg">
 
 [![author](https://img.shields.io/badge/author-JowayYoung-f66.svg)](https://github.com/JowayYoung/vscode-lint)
-[![version](https://img.shields.io/badge/version-0.0.2-f66.svg)](https://github.com/JowayYoung/vscode-lint)
+[![version](https://img.shields.io/badge/version-0.0.3-f66.svg)](https://github.com/JowayYoung/vscode-lint)
 [![node](https://img.shields.io/badge/node-%3E%3D12.0.0-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
 [![npm](https://img.shields.io/badge/npm-%3E%3D6.9.0-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
 [![test](https://img.shields.io/badge/test-passing-f90.svg)](https://github.com/JowayYoung/vscode-lint)
@@ -11,7 +11,7 @@
 
 > `vscode-lint`是一个集成**Stylelint**和**Eslint**的VSCode配置工具，提供`html/css/scss/less/js/ts/jsx/tsx/vue文件`的代码校验功能
 
-**vscode-lint**用于约束团队成员的`编码规范`和`编码风格`，从而增加项目代码的`可维护性`和`可接入性`，保障项目整体质量，可减少`无用代码`、`重复代码`、`错误代码`和`漏洞代码`的产生几率。它的根本目的是**一次配置全局运行**，统一所有项目的`编码规范`和`编码风格`，养成规范的码字习惯，减少不必要的错误和隐患。
+**vscode-lint**用于约束团队成员的`编码规范`与`编码风格`，从而增加项目代码的`可维护性`与`可接入性`，保障项目整体质量，可减少`无用代码`、`重复代码`、`错误代码`和`漏洞代码`的产生几率。它的根本目的是**一次配置全局运行**，统一所有项目的`编码规范`与`编码风格`，养成规范的码字习惯，减少不必要的错误和隐患。
 
 `vscode-lint`依赖以下`NPM模块`的最新版本。
 
@@ -24,8 +24,8 @@
 
 为了方便表述，统一以下名词。
 
-- 以下提及的**Stylelint**和**Eslint**均为`VSCode插件`
-- 以下提及的**stylelint**和**eslint**均为`NPM模块`
+- 以下提及的**Stylelint**与**Eslint**均为`VSCode插件`
+- 以下提及的**stylelint**与**eslint**均为`NPM模块`
 
 ### 安装
 
@@ -39,7 +39,7 @@
 ### 配置
 
 - 打开`VSCode`
-- 选择左边`工具栏`的`插件`，搜索并安装`Stylelint`和`Eslint`，安装完毕重启`VSCode`
+- 选择左边`工具栏`的`插件`，搜索并安装`Stylelint`与`Eslint`，安装完毕重启`VSCode`
 - 选择`文件→首选项→设置`，`设置`中可选`用户`或`工作区`
 	- **用户**：配置生效后会作用于全局项目(`若大部分项目都是单一的React应用或Vue应用推荐使用全局配置`)
 	- **工作区**：配置生效后只会作用于当前打开项目
@@ -73,22 +73,23 @@
 - 执行`npm config get prefix`获取的**NPM根目录**，例如是`E:/Node/prefix/node_modules`
 - 将上述配置的`path`替换为`E:/Node/prefix/node_modules`
 
-**请保持VSCode及其所有插件均为最新版本**，防止因版本问题导致`Stylelint`和`Eslint`失效。
+**请保持VSCode及其所有插件均为最新版本**，防止因版本问题导致`Stylelint`与`Eslint`失效。
 
 ### 结构
 
 请根据项目自行选择以下配置文件。
 
-- **stylelint文件夹**：校验`html/css/scss/less/vue文件`
-	- 配置文件：`stylelintrc.js`
+- **stylelint文件夹**
+	- [stylelintrc.js](https://github.com/JowayYoung/vscode-lint/blob/master/stylelint/stylelintrc.js)：校验`html/css/scss/less/vue文件`
 - **eslint文件夹**：校验`html/js/jsx/vue文件`
-	- JS配置文件：`eslintrc.js`
-	- React配置文件：`eslintrc.react.js`
-	- Vue配置文件：`eslintrc.vue.js`
+	- [eslintrc.js](https://github.com/JowayYoung/vscode-lint/blob/master/eslint/eslintrc.js)：校验`html/js文件`
+	- [eslintrc.react.js](https://github.com/JowayYoung/vscode-lint/blob/master/eslint/eslintrc.react.js)：校验`html/jsx文件`
+	- [eslintrc.vue.js](https://github.com/JowayYoung/vscode-lint/blob/master/eslint/eslintrc.vue.js)：校验`html/vue文件`
 - **tslint文件夹**：校验`html/ts/tsx/vue文件`(`Tslint`已弃用，使用`Eslint`代替)
-	- TS配置文件：`tslintrc.js`
-	- React配置文件：`tslintrc.react.js`
-	- Vue配置文件：`tslintrc.vue.js`
+	- [tsconfig.json](https://github.com/JowayYoung/vscode-lint/blob/master/tslint/tsconfig.json)：配置`TypeScript`
+	- [tslintrc.js](https://github.com/JowayYoung/vscode-lint/blob/master/tslint/tslintrc.js)：校验`html/ts文件`
+	- [tslintrc.react.js](https://github.com/JowayYoung/vscode-lint/blob/master/tslint/tslintrc.react.js)：校验`html/tsx文件`
+	- [tslintrc.vue.js](https://github.com/JowayYoung/vscode-lint/blob/master/tslint/tslintrc.vue.js)：校验`html/vue文件`
 
 若校验`React应用`代码，则将`eslint.options.overrideConfigFile`的值修改为`path/vscode-lint/eslint/eslintrc.react.js`。若校验`React TS应用`代码，则将`eslint.options.overrideConfigFile`的值修改为`path/vscode-lint/tslint/tslintrc.react.js`。其他情况以此类推。
 

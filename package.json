@@ -1,6 +1,6 @@
 {
 	"name": "vscode-lint",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "A VSCode configuration tool integrating Stylelint and Eslint",
 	"keywords": [
 		"vscode",
@@ -40,7 +40,7 @@
 		"eslint-plugin-import": "2.25.3",
 		"eslint-plugin-node": "11.1.0",
 		"eslint-plugin-promise": "6.0.0",
-		"eslint-plugin-react": "7.27.1",
+		"eslint-plugin-react": "7.28.0",
 		"eslint-plugin-react-hooks": "4.3.0",
 		"eslint-plugin-vue": "8.2.0",
 		"postcss-html": "1.3.0",
@@ -53,7 +53,7 @@
 		"vue-eslint-parser": "8.0.1"
 	},
 	"devDependencies": {
-		"@types/react": "17.0.37",
+		"@types/react": "17.0.38",
 		"@types/react-dom": "17.0.11",
 		"react": "17.0.2",
 		"react-dom": "17.0.2",
