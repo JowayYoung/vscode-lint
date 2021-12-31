@@ -1,6 +1,6 @@
 {
 	"name": "vscode-lint",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "A VSCode configuration tool integrating Stylelint and Eslint",
 	"keywords": [
 		"vscode",
@@ -28,11 +28,11 @@
 		"npm": ">=6.9.0"
 	},
 	"dependencies": {
-		"@babel/core": "7.16.5",
+		"@babel/core": "7.16.7",
 		"@babel/eslint-parser": "7.16.5",
-		"@babel/preset-react": "7.16.5",
-		"@typescript-eslint/eslint-plugin": "5.8.0",
-		"@typescript-eslint/parser": "5.8.0",
+		"@babel/preset-react": "7.16.7",
+		"@typescript-eslint/eslint-plugin": "5.8.1",
+		"@typescript-eslint/parser": "5.8.1",
 		"eslint": "8.5.0",
 		"eslint-config-standard": "16.0.3",
 		"eslint-config-standard-with-typescript": "21.0.1",
