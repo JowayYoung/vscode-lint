@@ -57,6 +57,7 @@ module.exports = {
 		"vue/html-indent": ["error", "tab"], // vue
 		"vue/html-self-closing": ["off"], // vue
 		"vue/max-attributes-per-line": ["off"], // vue
+		"vue/multi-word-component-names": ["off"], // vue
 		"vue/mustache-interpolation-spacing": ["error", "never"], // vue
 		"vue/name-property-casing": ["error", "kebab-case"], // vue
 		"vue/singleline-html-element-content-newline": ["off"] // vue
