@@ -7,13 +7,13 @@ module.exports = {
 	extends: "stylelint-config-standard",
 	overrides: [{
 		customSyntax: "postcss-scss",
-		files: ["**/*.(css|scss)"]
+		files: ["**/*.css", "**/*.scss"]
 	}, {
 		customSyntax: "postcss-less",
 		files: ["**/*.less"]
 	}, {
 		customSyntax: "postcss-html",
-		files: ["**/*.(html|vue)"]
+		files: ["**/*.html", "**/*.vue"]
 	}],
 	plugins: ["stylelint-order"],
 	rules: {

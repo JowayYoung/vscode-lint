@@ -1,7 +1,7 @@
 # VSCode Lint <img src="https://img.shields.io/badge/vscode--lint-集成Stylelint与Eslint的VSCode配置工具-66f.svg">
 
 [![author](https://img.shields.io/badge/author-JowayYoung-f66.svg)](https://github.com/JowayYoung/vscode-lint)
-[![version](https://img.shields.io/badge/version-0.0.4-f66.svg)](https://github.com/JowayYoung/vscode-lint)
+[![version](https://img.shields.io/badge/version-0.0.5-f66.svg)](https://github.com/JowayYoung/vscode-lint)
 [![node](https://img.shields.io/badge/node-%3E%3D12.0.0-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
 [![npm](https://img.shields.io/badge/npm-%3E%3D6.9.0-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
 [![test](https://img.shields.io/badge/test-passing-f90.svg)](https://github.com/JowayYoung/vscode-lint)
@@ -59,10 +59,11 @@
 	// 扩展自定义配置
 	"eslint.nodePath": "path/vscode-lint/node_modules",
 	"eslint.options": {
-		"overrideConfigFile": "path/vscode-lint/eslint/eslintrc.js"
+		"overrideConfigFile": "path/vscode-lint/eslint/eslintrc.js" // 可变⚠️
 	},
 	"stylelint.configBasedir": "path/vscode-lint",
 	"stylelint.configFile": "path/vscode-lint/stylelint/stylelintrc.js",
+	"stylelint.customSyntax": "postcss-html", // 可变⚠️
 	"stylelint.stylelintPath": "path/vscode-lint/node_modules/stylelint",
 	"stylelint.validate": ["html", "css", "scss", "less", "vue"]
 }
@@ -80,18 +81,35 @@
 请根据项目自行选择以下配置文件。
 
 - **stylelint文件夹**
-	- [stylelintrc.js](https://github.com/JowayYoung/vscode-lint/blob/master/stylelint/stylelintrc.js)：校验`html/css/scss/less/vue文件`
+	- [x] [stylelintrc.js](https://github.com/JowayYoung/vscode-lint/blob/master/stylelint/stylelintrc.js)：校验`html/css/scss/less/vue文件`
 - **eslint文件夹**：校验`html/js/jsx/vue文件`
-	- [eslintrc.js](https://github.com/JowayYoung/vscode-lint/blob/master/eslint/eslintrc.js)：校验`html/js文件`
-	- [eslintrc.react.js](https://github.com/JowayYoung/vscode-lint/blob/master/eslint/eslintrc.react.js)：校验`html/jsx文件`
-	- [eslintrc.vue.js](https://github.com/JowayYoung/vscode-lint/blob/master/eslint/eslintrc.vue.js)：校验`html/vue文件`
+	- [x] [eslintrc.js](https://github.com/JowayYoung/vscode-lint/blob/master/eslint/eslintrc.js)：校验`html/js文件`
+	- [x] [eslintrc.react.js](https://github.com/JowayYoung/vscode-lint/blob/master/eslint/eslintrc.react.js)：校验`html/jsx文件`
+	- [x] [eslintrc.vue.js](https://github.com/JowayYoung/vscode-lint/blob/master/eslint/eslintrc.vue.js)：校验`html/vue文件`
 - **tslint文件夹**：校验`html/ts/tsx/vue文件`(`Tslint`已弃用，使用`Eslint`代替)
-	- [tsconfig.json](https://github.com/JowayYoung/vscode-lint/blob/master/tslint/tsconfig.json)：配置`TypeScript`
-	- [tslintrc.js](https://github.com/JowayYoung/vscode-lint/blob/master/tslint/tslintrc.js)：校验`html/ts文件`
-	- [tslintrc.react.js](https://github.com/JowayYoung/vscode-lint/blob/master/tslint/tslintrc.react.js)：校验`html/tsx文件`
-	- [tslintrc.vue.js](https://github.com/JowayYoung/vscode-lint/blob/master/tslint/tslintrc.vue.js)：校验`html/vue文件`
+	- [x] [tsconfig.json](https://github.com/JowayYoung/vscode-lint/blob/master/tslint/tsconfig.json)：配置`TypeScript`
+	- [x] [tslintrc.js](https://github.com/JowayYoung/vscode-lint/blob/master/tslint/tslintrc.js)：校验`html/ts文件`
+	- [x] [tslintrc.react.js](https://github.com/JowayYoung/vscode-lint/blob/master/tslint/tslintrc.react.js)：校验`html/tsx文件`
+	- [x] [tslintrc.vue.js](https://github.com/JowayYoung/vscode-lint/blob/master/tslint/tslintrc.vue.js)：校验`html/vue文件`
 
-若校验`React应用`代码，则将`eslint.options.overrideConfigFile`的值修改为`path/vscode-lint/eslint/eslintrc.react.js`。若校验`React TS应用`代码，则将`eslint.options.overrideConfigFile`的值修改为`path/vscode-lint/tslint/tslintrc.react.js`。其他情况以此类推。
+> Stylelint
+
+校验不同类型代码需实时修改`stylelint.customSyntax`的值。
+
+- [x] **CSS/SCSS**：`postcss-scss`
+- [x] **LESS**：`postcss-less`
+- [x] **HTML/VUE**：`postcss-html`
+
+> Eslint
+
+校验不同类型代码需实时修改`eslint.options.overrideConfigFile`的值。
+
+- [x] **JS**：`path/vscode-lint/eslint/eslintrc.js`
+- [x] **React**：`path/vscode-lint/eslint/eslintrc.react.js`
+- [x] **Vue**：`path/vscode-lint/eslint/eslintrc.vue.js`
+- [x] **TS**：`path/vscode-lint/tslint/tslintrc.js`
+- [x] **React TS**：`path/vscode-lint/tslint/tslintrc.react.js`
+- [x] **Vue TS**：`path/vscode-lint/tslint/tslintrc.vue.js`
 
 ### 疑问
 
