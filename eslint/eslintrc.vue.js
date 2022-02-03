@@ -15,8 +15,7 @@ module.exports = {
 	parser: "vue-eslint-parser",
 	parserOptions: {
 		babelOptions: {
-			cwd: join(__dirname, ".."),
-			presets: ["@babel/preset-react"]
+			cwd: join(__dirname, "..")
 		},
 		ecmaVersion: "latest",
 		parser: "@babel/eslint-parser",

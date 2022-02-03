@@ -14,7 +14,7 @@ module.exports = {
 	parserOptions: {
 		createDefaultProgram: true,
 		ecmaVersion: "latest",
-		project: "./tsconfig.json",
+		project: "tsconfig.json",
 		sourceType: "module",
 		tsconfigRootDir: __dirname
 	}, // https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/parser#parseroptionsproject
@@ -30,6 +30,7 @@ module.exports = {
 		"@typescript-eslint/quotes": ["error", "double"], // ts
 		"@typescript-eslint/semi": ["error", "always"], // ts
 		"@typescript-eslint/space-before-function-paren": ["error", "never"], // ts
+		"@typescript-eslint/strict-boolean-expressions": ["off"], // ts
 		"eol-last": ["error", "never"],
 		"handle-callback-err": ["error", "err"],
 		"indent": ["error", "tab"],
