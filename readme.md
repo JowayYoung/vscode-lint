@@ -1,7 +1,7 @@
 # VSCode Lint <img src="https://img.shields.io/badge/vscode--lint-集成Stylelint与Eslint的VSCode配置工具-66f.svg">
 
 [![author](https://img.shields.io/badge/author-JowayYoung-f66.svg)](https://github.com/JowayYoung/vscode-lint)
-[![version](https://img.shields.io/badge/version-0.0.5-f66.svg)](https://github.com/JowayYoung/vscode-lint)
+[![version](https://img.shields.io/badge/version-0.0.6-f66.svg)](https://github.com/JowayYoung/vscode-lint)
 [![node](https://img.shields.io/badge/node-%3E%3D12.0.0-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
 [![npm](https://img.shields.io/badge/npm-%3E%3D6.9.0-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
 [![test](https://img.shields.io/badge/test-passing-f90.svg)](https://github.com/JowayYoung/vscode-lint)
