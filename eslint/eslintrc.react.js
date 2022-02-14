@@ -41,6 +41,7 @@ module.exports = {
 		"no-async-promise-executor": ["off"],
 		"no-console": ["off"],
 		"no-extend-native": ["off"],
+		"no-extra-semi": ["error"],
 		"no-new": ["off"],
 		"no-proto": ["off"],
 		"no-return-assign": ["off"],
