@@ -3,21 +3,26 @@
 		"allowJs": true,
 		"allowSyntheticDefaultImports": true,
 		"baseUrl": ".",
+		"declaration": true,
+		"declarationDir": "dist",
+		"downlevelIteration": true,
 		"esModuleInterop": true,
 		"experimentalDecorators": true,
+		"forceConsistentCasingInFileNames": true,
 		"jsx": "preserve",
 		"lib": [
-			"dom",
-			"es2015",
-			"es2016",
-			"es2017",
-			"es2018",
-			"es2019",
-			"es2020",
-			"es2021",
-			"esnext"
+			"DOM",
+			"DOM.Iterable",
+			"ES2015",
+			"ES2016",
+			"ES2017",
+			"ES2018",
+			"ES2019",
+			"ES2020",
+			"ES2021",
+			"ESNext"
 		],
-		"module": "es6",
+		"module": "ES6",
 		"moduleResolution": "node",
 		"removeComments": true,
 		"paths": {
@@ -26,7 +31,7 @@
 		},
 		"sourceMap": true,
 		"strict": true,
-		"target": "es6",
+		"target": "ES6",
 		"typeRoots": [
 			"node_modules/@types",
 			"typings"
@@ -34,5 +39,8 @@
 	},
 	"exclude": [
 		"node_modules"
+	],
+	"include": [
+		"src"
 	]
 }
