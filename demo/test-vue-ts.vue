@@ -17,7 +17,7 @@ $bg: #fff;
 }
 </style>
 
-<script>
+<script lang="ts">
 export default {
 	name: "app",
 	data() {
