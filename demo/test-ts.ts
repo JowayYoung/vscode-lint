@@ -6,4 +6,4 @@ class ContainsText {
 	immediateTextImplicit = "text";
 }
 
-console.log(a, ContainsText, RUN_ENV);
+console.log(a, ContainsText);

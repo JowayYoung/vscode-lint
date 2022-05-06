@@ -1,9 +1,9 @@
 # VSCode Lint <img src="https://img.shields.io/badge/vscode--lint-集成Stylelint与Eslint的VSCode配置工具-66f.svg">
 
 [![author](https://img.shields.io/badge/author-JowayYoung-f66.svg)](https://github.com/JowayYoung/vscode-lint)
-[![version](https://img.shields.io/badge/version-0.0.7-f66.svg)](https://github.com/JowayYoung/vscode-lint)
-[![node](https://img.shields.io/badge/node-%3E%3D12.0.0-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
-[![npm](https://img.shields.io/badge/npm-%3E%3D6.9.0-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
+[![version](https://img.shields.io/badge/version-0.0.8-f66.svg)](https://github.com/JowayYoung/vscode-lint)
+[![node](https://img.shields.io/badge/node-%3E%3D16.0.0-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
+[![npm](https://img.shields.io/badge/npm-%3E%3D7.10.0-3c9.svg)](https://github.com/JowayYoung/vscode-lint)
 [![test](https://img.shields.io/badge/test-passing-f90.svg)](https://github.com/JowayYoung/vscode-lint)
 [![build](https://img.shields.io/badge/build-passing-f90.svg)](https://github.com/JowayYoung/vscode-lint)
 [![coverage](https://img.shields.io/badge/coverage-100%25-09f.svg)](https://github.com/JowayYoung/vscode-lint)
@@ -33,7 +33,7 @@
 
 > 安装失败
 
-- 切换**NPM镜像**为淘宝镜像：`npm config set registry https://registry.npm.taobao.org/`
+- 切换**NPM镜像**为淘宝镜像：`npm config set registry https://registry.npmmirror.com/`
 - 重新执行安装命令：`npm i -g vscode-lint`
 
 ### 配置
