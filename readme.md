@@ -24,8 +24,8 @@
 
 为了方便表述，统一以下名词。
 
-- 以下提及的**Stylelint**与**Eslint**均为`VSCode插件`
-- 以下提及的**stylelint**与**eslint**均为`NPM模块`
+- 以下提及的**Stylelint**与**Eslint**都为`VSCode插件`
+- 以下提及的**stylelint**与**eslint**都为`NPM模块`
 
 ### 安装
 
@@ -74,7 +74,7 @@
 - 执行`npm config get prefix`获取的**NPM根目录**，例如是`E:/Node/prefix/node_modules`
 - 将上述配置的`path`替换为`E:/Node/prefix/node_modules`
 
-**请保持VSCode及其所有插件均为最新版本**，防止因版本问题导致`Stylelint`与`Eslint`失效。
+**请保持VSCode及其所有插件都为最新版本**，防止因版本问题导致`Stylelint`与`Eslint`失效。
 
 ### 结构
 
