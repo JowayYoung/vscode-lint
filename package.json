@@ -33,7 +33,7 @@
 		"@babel/preset-react": "7.16.7",
 		"@typescript-eslint/eslint-plugin": "5.23.0",
 		"@typescript-eslint/parser": "5.23.0",
-		"eslint": "8.15.0",
+		"eslint": "9.26.0",
 		"eslint-config-standard": "17.0.0",
 		"eslint-config-standard-with-typescript": "git+https://github.com/ChristopherChudzicki/eslint-config-standard-with-typescript.git#v22.0.0",
 		"eslint-plugin-html": "6.2.0",
